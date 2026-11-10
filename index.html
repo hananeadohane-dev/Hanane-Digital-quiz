@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f4f6f0">
+<title>Hanane Digital 🌸 | اكتشف نيشك</title>
+<style>
+:root{--bg:#f4f6f0;--paper:#fff;--ink:#24352d;--muted:#718078;--green:#477b63;--green-dark:#315d49;--soft:#e8f0e8;--line:#e3eae2;--gold:#d9bd83}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.75}
+header{background:linear-gradient(135deg,#e5eee4,#f8f5ec);border-bottom:1px solid var(--line);padding:24px 16px 28px}
+.wrap{max-width:850px;margin:auto}.brand{display:flex;align-items:center;justify-content:space-between;gap:10px}.brand strong{font-size:12px;letter-spacing:1.4px;color:var(--green)}.pill{font-size:11px;color:var(--green);border:1px solid #d5e1d5;background:#ffffffa8;border-radius:30px;padding:5px 10px}
+h1{font-size:clamp(27px,5vw,42px);line-height:1.3;margin:25px 0 8px;max-width:680px}header p{margin:0;color:var(--muted);max-width:650px;font-size:14px}
+main{padding:24px 15px 55px}.shell{background:var(--paper);border:1px solid var(--line);border-radius:23px;box-shadow:0 15px 40px #263d300d;padding:clamp(18px,4vw,32px)}
+.progress-meta{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:12px}.track{height:8px;background:#e8eee7;border-radius:20px;overflow:hidden;margin:9px 0 25px}.track span{height:100%;width:0;background:var(--green);display:block;transition:.25s}
+h2{font-size:22px;margin:0 0 5px}.sub{color:var(--muted);font-size:13px;margin:0 0 22px}.step{display:none}.step.active{display:block}.qnum{font-size:11px;color:var(--green);font-weight:bold;letter-spacing:1px}.question{font-size:20px;font-weight:bold;line-height:1.5;margin:8px 0 7px}.hint{font-size:13px;color:var(--muted);margin:0 0 17px}
+.answers{display:grid;gap:10px}.answer{display:flex;align-items:flex-start;gap:11px;border:1px solid var(--line);border-radius:14px;padding:13px 14px;cursor:pointer;transition:.15s;background:#fff}.answer:hover{border-color:#a9c2ad}.answer:has(input:checked){border:1.5px solid var(--green);background:#f1f6f0}.answer input{accent-color:var(--green);margin-top:6px;flex-shrink:0}.answer b{display:block;font-size:14px}.answer small{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+.actions{display:flex;justify-content:space-between;gap:10px;margin-top:24px}.btn{border:0;border-radius:12px;padding:12px 19px;font:inherit;font-size:14px;font-weight:bold;cursor:pointer}.primary{background:var(--green);color:#fff}.primary:hover{background:var(--green-dark)}.ghost{background:#eef3ed;color:var(--green)}.btn:disabled{opacity:.35;cursor:not-allowed}
+.start{text-align:center;padding:15px 5px 7px}.symbol{width:64px;height:64px;border-radius:20px;background:var(--soft);display:grid;place-items:center;font-size:29px;margin:0 auto 17px}.start h2{font-size:25px}.start p{color:var(--muted);font-size:14px;max-width:530px;margin:8px auto 22px}
+.note{font-size:11px;color:var(--muted);text-align:center;margin-top:16px}
+.result{display:none}.result.show{display:block}.result-top{background:linear-gradient(135deg,#eaf2e8,#f8f6ef);border:1px solid #dfe9dc;border-radius:18px;padding:20px;margin:15px 0}.result-top .eyebrow{font-size:11px;color:var(--green);font-weight:bold}.result-top h2{font-size:27px;margin:5px 0}.result-top p{color:#607268;margin:5px 0;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:13px 0 20px}.tile{border:1px solid var(--line);border-radius:15px;padding:15px;background:#fff}.tile h3{font-size:15px;margin:0 0 7px}.tile p,.tile li{font-size:13px;color:var(--muted);margin:0}.tile ul{padding-right:18px;margin:6px 0}.section-title{font-size:18px;margin:24px 0 8px}.platform{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:13px;padding:13px;margin:9px 0}.platform b{font-size:14px}.platform p{font-size:12px;color:var(--muted);margin:3px 0}.platform a{color:var(--green);font-size:12px;white-space:nowrap}
+.scoreline{height:7px;background:#e8eee7;border-radius:20px;overflow:hidden;margin-top:7px}.scoreline span{display:block;height:100%;background:var(--green)}
+.task{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}.task input{accent-color:var(--green);margin-top:5px}.task.done span{text-decoration:line-through;color:#9aa69d}
+footer{text-align:center;color:var(--muted);font-size:11px;padding:18px}
+@media(max-width:520px){.brand{align-items:flex-start;flex-direction:column}.shell{border-radius:17px}.actions .btn{flex:1;padding:11px 8px}.platform{flex-direction:column}.platform a{white-space:normal}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="brand"><strong>DIGITAL PRODUCT LAUNCHPAD</strong><span class="pill">NICHE DISCOVERY QUIZ · BETA</span></div>
+<h1>اكتشف النيش ديالك، والمنتج اللي تقدر تبدأ به.</h1>
+<p>كويز تفاعلي كيربط بين اهتماماتك، مهاراتك، الجمهور اللي باغي تخدم معاه، وطريقة العمل اللي تناسبك — وفي النهاية يعطيك اتجاه واضح ومنصات مناسبة للبداية.</p>
+</div></header>
+<main class="wrap"><div class="shell">
+<div id="intro" class="start">
+<div class="symbol">✦</div><h2>خلّينا نكتاشفو الاتجاه المناسب ليك</h2>
+<p>جاوب بصدق على 12 سؤال. ما كاين لا جواب صحيح لا خاطئ. الهدف هو نخرجو بتوصية عملية، ماشي نحطوك فخانة ثابتة.</p>
+<button class="btn primary" id="begin">ابدأ الكويز ←</button>
+<div class="note">المدة التقريبية: 3–5 دقائق · تقدر ترجع للسؤال السابق وتبدّل جوابك.</div>
+</div>
+<div id="quiz" style="display:none">
+<div class="progress-meta"><span id="stepLabel">السؤال 1 من 12</span><span id="pct">8%</span></div><div class="track"><span id="progress"></span></div>
+<div id="questionArea"></div>
+<div class="actions"><button class="btn ghost" id="back">السابق</button><button class="btn primary" id="next" disabled>التالي ←</button></div>
+<div class="note">اختار الجواب الأقرب ليك. بعض الأسئلة كتسمح بأكثر من اختيار.</div>
+</div>
+<div id="result" class="result">
+<div class="progress-meta"><span>نتيجة تحليل إجاباتك</span><span>YOUR STARTING MAP</span></div>
+<div class="result-top"><div class="eyebrow">النيش الأقرب ليك</div><h2 id="mainNiche"></h2><p id="nicheReason"></p><div id="scoreSummary"></div></div>
+<h3 class="section-title">1. المجالات اللي ممكن تناسبك</h3><div id="ranked" class="grid"></div>
+<h3 class="section-title">2. منتجات رقمية تقدر تبدأ بها</h3><div id="products" class="grid"></div>
+<h3 class="section-title">3. المنصات المناسبة لبيع منتجاتك</h3><div id="platforms"></div>
+<h3 class="section-title">4. فين تسوّق وتجيب الجمهور؟</h3><div id="marketing" class="grid"></div>
+<h3 class="section-title">5. أول تجربة عملية خلال أسبوع</h3><div id="roadmap"></div>
+<div class="result-top" style="margin-top:20px"><b>تذكير مهم</b><p>النتيجة نقطة انطلاق مبنية على اختياراتك، ماشي حكم نهائي ولا ضمان للنجاح. قبل إنشاء المنتج، تحدث مع أشخاص من الجمهور المستهدف واختبر واش فعلاً محتاجين الحل.</p></div>
+<div class="actions"><button class="btn ghost" id="restart">عاود الكويز</button><button class="btn primary" id="print">حفظ النتيجة PDF / طباعة</button></div>
+<div class="note">توصيات المنصات عامة؛ تأكد من شروط الأهلية، السن، طرق الدفع، الرسوم وتوفر الخدمة في بلدك قبل التسجيل أو البيع.</div>
+</div>
+</div></main><footer>Hanane Digital 🌸 · Built to turn confusion into a clear first step.</footer>
+<script>
+const questions=[
+{q:"شنو أكثر مواضيع كتشدّ اهتمامك حتى إلا ما طلب منك حتى واحد تبحث عليها؟",h:"اختار المجال اللي كتلقى راسك كتقرا أو كتتفرج عليه باستمرار.",multi:true,opts:[["kids","تعليم الأطفال والتربية","أنشطة، تعلم، ألعاب تعليمية"],["design","التصميم والجمال البصري","ألوان، Canva، قوالب، ديكور"],["business","البيزنس والتسويق","المشاريع، التسويق، صناعة المحتوى"],["life","التنظيم وتطوير الذات","العادات، التخطيط، الإنتاجية"],["skills","تعلم مهارات جديدة","اللغات، الدراسة، المهارات العملية"]]},
+{q:"شنو الحاجة اللي الناس كيرجعو يطلبو منك المساعدة فيها؟",h:"فكر فالمساعدة اللي كتقدر تقدمها بشكل طبيعي.",opts:[["design","نصايب ليهم تصاميم أو نرتب ليهم الأفكار"],["explain","نشرح ليهم معلومة بطريقة سهلة"],["ideas","نعطيهم أفكار وحلول للمشاكل"],["organize","نعاونهم ينظمو وقتهم أو خدمتهم"],["none","مازال ما لاحظتش شي حاجة محددة"]]},
+{q:"مع أي فئة كتفضّل تخدم وتفهم احتياجاتها؟",opts:[["parents","الآباء، الأمهات والمعلمون"],["creators","صناع المحتوى وأصحاب المشاريع"],["learners","الطلبة والمبتدئون اللي باغين يتعلمو"],["personal","أشخاص باغين ينظمو حياتهم"],["open","مازال منفتح على أكثر من جمهور"]]},
+{q:"شنو المشكل اللي كتستمتع تلقى ليه حلول؟",opts:[["education","صعوبة التعلم أو إيجاد أنشطة مفيدة"],["visibility","صعوبة التسويق وصناعة محتوى جذاب"],["visual","الحاجة لتصاميم مرتبة وسهلة الاستعمال"],["chaos","التشتت، نسيان المهام وسوء التنظيم"],["knowledge","عدم فهم موضوع أو مهارة من الصفر"]]},
+{q:"شنو نوع الخدمة اللي تقدر تستمتع بصناعتها؟",opts:[["print","ملفات للطباعة: أنشطة، بطاقات، دفاتر"],["template","قوالب قابلة للتعديل على Canva"],["guide","دليل PDF فيه شرح وخطوات واضحة"],["tool","جدول أو أداة تنظيمية مثل Google Sheets"],["bundle","حزمة موارد متنوعة ومنظمة"]]},
+{q:"شنو المهارات أو الأدوات اللي عندك فيها تجربة؟",h:"اختار كل ما ينطبق عليك، حتى لو كان المستوى ديالك مبتدئ.",multi:true,opts:[["canva","Canva والتصميم"],["writing","الكتابة وتبسيط المعلومات"],["sheets","Google Sheets أو Excel"],["teaching","التعليم أو إعداد الأنشطة"],["social","إدارة صفحات التواصل وصناعة المحتوى"],["research","البحث وتجميع المعلومات"]]},
+{q:"شنو نوع العمل اللي كيناسبك أكثر؟",opts:[["visual","عمل بصري: ألوان، صور، تخطيطات"],["words","كتابة، شرح وتنظيم المعلومات"],["logic","جداول، أرقام، أنظمة وأدوات"],["mix","مزيج من هاد الأنواع"]]},
+{q:"شنو المنصة اللي كتستعمل أو كتفهمها أكثر فالتسويق؟",multi:true,opts:[["pinterest","Pinterest"],["instagram","Instagram"],["facebook","Facebook"],["tiktok","TikTok"],["youtube","YouTube أو المدونات"],["none","مازال ما عنديش قناة واضحة"]]},
+{q:"شنو الموارد المتاحة ليك حالياً باش تصايب المنتج؟",opts:[["phone","الهاتف فقط"],["computer","حاسوب وأدوات التصميم"],["basic","هاتف وحاسوب بإمكانيات بسيطة"],["tools","عندي أدوات أو برامج متخصصة"]]},
+{q:"شحال من الوقت تقدر تخصص للمشروع فالأسبوع؟",opts:[["tiny","أقل من 3 ساعات"],["some","3 إلى 6 ساعات"],["steady","7 إلى 12 ساعة"],["more","أكثر من 12 ساعة"]]},
+{q:"شنو النتيجة اللي باغي تحققها للمشتري؟",opts:[["save","يوفر الوقت والمجهود"],["learn","يتعلم مهارة أو يفهم موضوع"],["create","يخرج بتصميم أو محتوى جاهز"],["organize","ينظم أموره ويتابع تقدمه"],["engage","يوفر نشاط مفيد وممتع للأطفال"]]},
+{q:"شنو أقرب وصف للمرحلة اللي وصلتي ليها؟",opts:[["explore","باقي كنكتاشف وما عنديش فكرة محددة"],["idea","عندي أفكار ولكن ما اختبرتهاش"],["make","نقدر نصايب منتج ولكن ما عارفش فين نبيعو"],["market","عندي منتج وباغي نعرف كيفاش نسوق ليه"]]}
+];
+const niches={
+education:{name:"التعليم والموارد التعليمية",emoji:"📚",desc:"كتبان ميولك نحو تبسيط التعلم وصناعة موارد نافعة للآباء أو المعلمين أو المتعلمين.",products:["كتب أنشطة وتلوين حسب العمر أو المهارة","بطاقات تعليمية (حروف، أرقام، مفردات)","أوراق عمل وتمارين قابلة للطباعة","حزم أنشطة موسمية أو تعليم منزلي"],platforms:[["Teachers Pay Teachers","مناسب للموارد التعليمية وأوراق العمل الموجهة للمعلمين.","https://www.teacherspayteachers.com/"],["Etsy","سوق للملفات القابلة للطباعة والأنشطة الرقمية؛ المنافسة مهمة.","https://www.etsy.com/"],["Payhip","متجر مباشر لبيع ملفات PDF والحزم الرقمية.","https://payhip.com/"]],marketing:["Pinterest: صور واضحة للأنشطة حسب العمر والموضوع","مجموعات وصفحات الآباء والمعلمين مع احترام قواعد النشر","Instagram: فيديو قصير يشرح كيف يستعمل النشاط"]},
+design:{name:"التصميم والقوالب الرقمية",emoji:"🎨",desc:"ميولك كتقرب للتصميم البصري والحلول الجاهزة اللي كتسهل على الناس إنشاء محتوى مرتب.",products:["حزم قوالب Canva قابلة للتعديل","قوالب Pinterest Pins أو Instagram Posts","قوالب عروض تقديمية أو ملفات عمل","حزمة هوية بصرية مصغرة للمشاريع الصغيرة"],platforms:[["Etsy","مناسب للقوالب والملفات الرقمية القابلة للتحميل.","https://www.etsy.com/"],["Payhip","متجر مباشر لبيع الحزم والقوالب والملفات.","https://payhip.com/"],["Gumroad","خيار لبيع المنتجات الرقمية والملفات مباشرة للجمهور.","https://gumroad.com/"]],marketing:["Pinterest: اعرض القالب في استعمال واقعي مع كلمات بحث واضحة","Instagram: Reels قبل/بعد أو طريقة تعديل القالب","Facebook: مجموعات أصحاب المشاريع وصناع المحتوى"]},
+marketing:{name:"صناعة المحتوى والتسويق",emoji:"📣",desc:"كتبان عندك ميول لفهم مشاكل الظهور والتواصل، ومساعدة صناع المحتوى والمشاريع الصغيرة.",products:["مخطط محتوى شهري قابل للتعديل","حزمة أفكار منشورات حسب مجال محدد","قوالب كتابة Captions وContent Calendar","دليل عملي صغير حول أساسيات التسويق"],platforms:[["Payhip","مناسب لبيع الأدلة والحزم الرقمية مباشرة.","https://payhip.com/"],["Gumroad","مناسب لبيع ملفات وأدلة رقمية لجمهورك.","https://gumroad.com/"],["Etsy","يمكن اختبار قوالب التخطيط والموارد الجاهزة.","https://www.etsy.com/"]],marketing:["Instagram: شروحات قصيرة وأمثلة تطبيقية","Pinterest: دبابيس تعليمية مرتبطة بمشاكل يبحث عنها الجمهور","Facebook: محتوى تعليمي ومناقشات داخل المجتمعات المناسبة"]},
+organization:{name:"التنظيم والإنتاجية",emoji:"🗓️",desc:"ميولك كتقرب للأدوات اللي كتعاون الناس يخططو، يتبعو تقدمهم ويوفرو الوقت.",products:["مخطط أسبوعي أو شهري قابل للطباعة","Budget Tracker على Google Sheets","Habit Tracker أو Reading Tracker","لوحة تنظيم مهام أو أهداف"],platforms:[["Etsy","مناسب للمخططات والجداول القابلة للتحميل.","https://www.etsy.com/"],["Payhip","متجر مباشر لبيع ملفات PDF وملفات الجداول.","https://payhip.com/"],["Gumroad","يمكن بيع قوالب وأدوات رقمية قابلة للتحميل.","https://gumroad.com/"]],marketing:["Pinterest: صور للمخطط مع كلمات بحث عن التنظيم","Instagram: فيديو يوضح طريقة استعمال الأداة","Facebook: محتوى عملي ونماذج مجانية صغيرة"]},
+learning:{name:"التعليم والأدلة العملية",emoji:"🧠",desc:"كتبان عندك ميول للشرح، تجميع المعرفة وتحويلها لخطوات سهلة للمبتدئين.",products:["دليل مبسط لمهارة محددة","دفتر تمارين وتطبيقات","قائمة موارد أو Workbook","حزمة تعلم قصيرة مع أوراق عمل"],platforms:[["Payhip","مناسب للأدلة والملفات التعليمية والـWorkbooks.","https://payhip.com/"],["Gumroad","خيار لبيع الأدلة والملفات مباشرة.","https://gumroad.com/"],["Teachers Pay Teachers","إذا كان المحتوى موجهاً بوضوح للمعلمين أو التعليم المدرسي.","https://www.teacherspayteachers.com/"]],marketing:["YouTube أو Reels: شرح مفهوم واحد في كل مرة","Pinterest: دبابيس تعليمية تقود للدليل","Facebook: منشورات فيها خطوات وأمثلة مفيدة"]}
+};
+const map={kids:"education",design:"design",business:"marketing",life:"organization",skills:"learning",explain:"learning",ideas:"marketing",organize:"organization",none:"learning",parents:"education",creators:"marketing",learners:"learning",personal:"organization",open:"learning",education:"education",visibility:"marketing",visual:"design",chaos:"organization",knowledge:"learning",print:"education",template:"design",guide:"learning",tool:"organization",bundle:"marketing",canva:"design",writing:"learning",sheets:"organization",teaching:"education",social:"marketing",research:"learning",visualwork:"design",words:"learning",logic:"organization",mix:"learning",engage:"education",save:"organization",learn:"learning",create:"design",freelance:"marketing"};
+let current=0,answers={};
+const area=document.getElementById('questionArea');
+function renderQ(){let q=questions[current],saved=answers[current]||[];document.getElementById('stepLabel').textContent=`السؤال ${current+1} من ${questions.length}`;let p=Math.round((current+1)/questions.length*100);document.getElementById('pct').textContent=p+'%';document.getElementById('progress').style.width=p+'%';
+area.innerHTML=`<div class="step active"><div class="qnum">QUESTION ${String(current+1).padStart(2,'0')}</div><div class="question">${q.q}</div><p class="hint">${q.h|| (q.multi?'تقدر تختار أكثر من جواب.':'اختار جواب واحد هو الأقرب ليك.')}</p><div class="answers">${q.opts.map(([v,t,d])=>`<label class="answer"><input type="${q.multi?'checkbox':'radio'}" name="q${current}" value="${v}" ${saved.includes(v)?'checked':''}><span><b>${t}</b>${d?`<small>${d}</small>`:''}</span></label>`).join('')}</div></div>`;
+document.getElementById('back').disabled=current===0;document.getElementById('next').textContent=current===questions.length-1?'شوف النتيجة ←':'التالي ←';document.getElementById('next').disabled=!answers[current]?.length;
+area.querySelectorAll('input').forEach(el=>el.addEventListener('change',()=>{let vals=[...area.querySelectorAll('input:checked')].map(x=>x.value);if(!q.multi&&vals.length>1)vals=[el.value];answers[current]=vals;if(!q.multi)renderQ();else document.getElementById('next').disabled=!vals.length;}));
+}
+document.getElementById('begin').onclick=()=>{document.getElementById('intro').style.display='none';document.getElementById('quiz').style.display='block';renderQ()};
+document.getElementById('back').onclick=()=>{if(current>0){current--;renderQ()}};
+document.getElementById('next').onclick=()=>{if(!answers[current]?.length)return;if(current<questions.length-1){current++;renderQ()}else showResults()};
+function showResults(){
+let scores={education:0,design:0,marketing:0,organization:0,learning:0};
+Object.values(answers).flat().forEach(v=>{let n=map[v];if(n)scores[n]+=1});
+if(answers[0]?.includes('kids'))scores.education+=2;if(answers[0]?.includes('design'))scores.design+=2;if(answers[0]?.includes('business'))scores.marketing+=2;if(answers[0]?.includes('life'))scores.organization+=2;if(answers[0]?.includes('skills'))scores.learning+=2;
+if(answers[5]?.includes('canva'))scores.design+=2;if(answers[5]?.includes('teaching'))scores.education+=2;if(answers[5]?.includes('sheets'))scores.organization+=2;if(answers[5]?.includes('social'))scores.marketing+=2;
+let sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]),winner=sorted[0][0],second=sorted[1][0],n=niches[winner];
+document.getElementById('mainNiche').textContent=n.emoji+' '+n.name;document.getElementById('nicheReason').textContent=n.desc;
+document.getElementById('scoreSummary').innerHTML=`<div class="small">مؤشر التقارب مع اختياراتك</div><div class="scoreline"><span style="width:${Math.min(100,Math.round(sorted[0][1]/Math.max(1,sorted.reduce((s,x)=>s+x[1],0))*100*2))}%"></span></div>`;
+document.getElementById('ranked').innerHTML=sorted.slice(0,3).map(([k,v],i)=>`<div class="tile"><h3>${i===0?'⭐ ':''}${niches[k].emoji} ${niches[k].name}</h3><p>${i===0?'الاتجاه الأقوى حسب إجاباتك':i===1?'مجال ثانوي يستحق الاستكشاف':'خيار إضافي ممكن'}</p><div class="scoreline"><span style="width:${Math.max(12,Math.round(v/Math.max(1,sorted[0][1])*100))}%"></span></div></div>`).join('');
+document.getElementById('products').innerHTML=n.products.map((x,i)=>`<div class="tile"><h3>فكرة ${i+1}</h3><p>${x}</p></div>`).join('');
+document.getElementById('platforms').innerHTML=n.platforms.map(([name,desc,url])=>`<div class="platform"><div><b>${name}</b><p>${desc}</p></div><a href="${url}" target="_blank" rel="noopener">الموقع الرسمي ↗</a></div>`).join('');
+document.getElementById('marketing').innerHTML=n.marketing.map((x,i)=>`<div class="tile"><h3>${['القناة الأولى','القناة الثانية','القناة الثالثة'][i]}</h3><p>${x}</p></div>`).join('');
+let steps=['حدّد شخصاً واحداً من الجمهور المستهدف واكتب شنو كيعاني منه.','سول 3 إلى 5 أشخاص من نفس الجمهور واش هاد المشكل مهم عندهم.','اختار فكرة واحدة فقط من المقترحات وحدد شنو غادي يتضمن المنتج.','شوف 5 منتجات مشابهة وسجل شنو كيعجبك وشنو ناقص فيها.','صايب نموذج صغير أو صفحة تجريبية قبل ما تكمل المنتج كامل.','اعرض النموذج على أشخاص من الجمهور وجمع ملاحظاتهم.','حسّن النسخة الأولى واختار منصة بيع وقناة تسويق مناسبة.'];
+document.getElementById('roadmap').innerHTML=steps.map((s,i)=>`<label class="task"><input type="checkbox"><span><b>اليوم ${i+1}:</b> ${s}</span></label>`).join('');
+document.getElementById('quiz').style.display='none';document.getElementById('result').classList.add('show');window.scrollTo({top:0,behavior:'smooth'});
+}
+document.getElementById('restart').onclick=()=>{current=0;answers={};document.getElementById('result').classList.remove('show');document.getElementById('quiz').style.display='block';renderQ();window.scrollTo({top:0,behavior:'smooth'})};
+document.getElementById('print').onclick=()=>window.print();
+</script>
+</body></html>
